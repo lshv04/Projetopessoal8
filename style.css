@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+:root {
+    --color-main: #000000de;
+    --color-green1: #00754a;
+    
+  }
+  .but{
+    border: 1px solid var(--color-main);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    padding:7px 16px;
+  }
+  /* navbar */
+  .nav-link1{
+    text-decoration: none;
+    color: var( --color-main);
+    margin-left: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+   padding-top: 32px;
+   padding-bottom:32px;
+   letter-spacing:  0.1em; 
+  }
+
+  .nav-linka{
+    color: var( --color-main);
+    text-decoration: none;
+    margin-right: 4rem;
+    font-weight: 600
+  }
+
+  .nav-linka i{
+    margin-right: 8px;
+    font-size: 1.5rem;
+  }
+
+
+
+  .nav-linkb{
+    color: var( --color-main);
+    margin-right: 16px ;
+  }
+  .nav-linkc{
+    background-color: var( --color-main);
+    color: #fff;
+  }
+ 
+  .bord{
+    border-bottom: 7px solid var( --color-green1);
+  }
