@@ -1,55 +1,127 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    font-family: "Oswald", sans-serif;
+}
+
+body {
     margin: 0;
     padding: 0;
     background-color: #fff;
 }
+
 :root {
     --color-main: #000000de;
     --color-green1: #00754a;
-    
-  }
-  .but{
+    --color-gray1: #e5e5e5;
+    --color-gray2: #4c4c4c;
+    --font1: 1rem;
+}
+
+.but {
     border: 1px solid var(--color-main);
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    padding:7px 16px;
-  }
-  /* navbar */
-  .nav-link1{
+    padding: 7px 16px;
+}
+
+/* navbar */
+.nav-link1 {
     text-decoration: none;
-    color: var( --color-main);
+    color: var(--color-main);
     margin-left: 2.4rem;
     font-weight: 700;
     text-transform: uppercase;
-   padding-top: 32px;
-   padding-bottom:32px;
-   letter-spacing:  0.1em; 
-  }
+    padding-top: 32px;
+    padding-bottom: 32px;
+    letter-spacing: 0.3em;
+    font-size: var(--font1);
+}
 
-  .nav-linka{
-    color: var( --color-main);
+.nav-linka {
+    color: var(--color-main);
     text-decoration: none;
     margin-right: 4rem;
-    font-weight: 600
-  }
+    font-weight: 600;
+    font-size: var(--font1);
+}
 
-  .nav-linka i{
+.nav-link1:hover,
+.nav-linka:hover {
+    color: var(--color-green1);
+}
+
+.nav-linka i {
     margin-right: 8px;
     font-size: 1.5rem;
-  }
+}
 
+.nav-linkb {
+    color: var(--color-main);
+    margin-right: 16px;
+    font-size: var(--font1);
+}
 
+.nav-linkb:hover {
+    background-color: var(--color-gray1);
+}
 
-  .nav-linkb{
-    color: var( --color-main);
-    margin-right: 16px ;
-  }
-  .nav-linkc{
-    background-color: var( --color-main);
+.nav-linkc {
+    background-color: var(--color-main);
     color: #fff;
-  }
- 
-  .bord{
-    border-bottom: 7px solid var( --color-green1);
-  }
+    font-size: var(--font1);
+}
+
+.nav-linkc:hover {
+    background-color: var(--color-gray2);
+}
+
+.bord {
+    border-bottom: 7px solid var(--color-green1);
+}
+
+.navflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .navflex {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        padding-left: 2rem;
+        gap: 1rem;
+    }
+
+    .nav-linkc,
+    .nav-linkb,
+    .nav-linka {
+        font-size: 0.875rem;
+    }
+
+    .nav-link1 {
+        font-weight: 400;
+        text-transform: none;
+        font-size: var(--font1);
+
+    }
+
+    .nav-item {
+        margin-bottom: 0.875rem;
+    }
+
+    .bord {
+        border-bottom: none;
+    }
+
+    .navdiv {
+        border-top: 1px solid var(--color-gray1);
+        padding-top: 1rem;
+    }
+
+}
