@@ -4,18 +4,31 @@
     font-family: "Oswald", sans-serif;
 }
 
+h1{
+    font-weight: 700;
+    font-size: 1rem;
+    color:var(--color-main-light);
+    letter-spacing: var(--letter-spacing);
+    margin:0;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #fff;
+    
+
 }
 
 :root {
     --color-main: #000000de;
+    --color-main-light:#fff;
+    --color-dark1: #1e3932;
     --color-green1: #00754a;
     --color-gray1: #e5e5e5;
     --color-gray2: #4c4c4c;
     --font1: 1rem;
+    --letter-spacing:0.3rem;
 }
 
 .but {
@@ -86,7 +99,33 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* Header */
 
+Header{
+    position: sticky;
+    top:0;
+    padding:var(--font1);
+    background-color: var(--color-dark1);
+   
+}
+.cont1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.cont1a{
+    margin-left: 10.3rem;
+ 
+}
+
+.cont1b .but{
+    display: none;
+    border: 1px solid #fff;
+    color:var(--color-main-light);
+}
 @media (max-width: 991px) {
     .navflex {
         display: flex;
@@ -123,5 +162,20 @@ body {
         border-top: 1px solid var(--color-gray1);
         padding-top: 1rem;
     }
+    .cont1b .but{
+      display: block;
+    }
+    .cont1a{
+        margin-left:2rem;
+    }
 
+}
+@media (max-width: 576px) {
+    .cont1a{
+        margin-left:1rem;
+        width: 50%
+    }
+    h1{
+        display:inline;
+    }
 }
