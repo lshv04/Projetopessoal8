@@ -4,12 +4,16 @@
     font-family: "Oswald", sans-serif;
 }
 
-h1{
+h1 {
     font-weight: 700;
     font-size: 1rem;
-    color:var(--color-main-light);
+    color: var(--color-main-light);
     letter-spacing: var(--letter-spacing);
-    margin:0;
+    margin: 0;
+}
+
+a {
+    color: var(--color-main);
 }
 
 body {
@@ -22,13 +26,14 @@ body {
 
 :root {
     --color-main: #000000de;
-    --color-main-light:#fff;
+    --color-main-light: #fff;
     --color-dark1: #1e3932;
     --color-green1: #00754a;
     --color-gray1: #e5e5e5;
     --color-gray2: #4c4c4c;
+    --bg-section: #d4e9e2;
     --font1: 1rem;
-    --letter-spacing:0.3rem;
+    --letter-spacing: 0.3rem;
 }
 
 .but {
@@ -37,6 +42,15 @@ body {
     text-decoration: none;
     font-weight: 600;
     padding: 7px 16px;
+
+}
+
+.linkhov {
+    text-decoration: underline;
+}
+
+.linkhov:hover {
+    text-decoration: none;
 }
 
 /* navbar */
@@ -64,7 +78,9 @@ body {
 .nav-linka:hover {
     color: var(--color-green1);
 }
-
+.sec1a .but:hover{
+    background-color: var(--color-green1);
+}
 .nav-linka i {
     margin-right: 8px;
     font-size: 1.5rem;
@@ -99,16 +115,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 /* Header */
 
-Header{
+Header {
     position: sticky;
-    top:0;
-    padding:var(--font1);
+    top: 0;
+    padding: var(--font1);
     background-color: var(--color-dark1);
-   
+
 }
-.cont1{
+
+.cont1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,16 +134,84 @@ Header{
 }
 
 
-.cont1a{
+.cont1a {
     margin-left: 10.3rem;
- 
+
 }
 
-.cont1b .but{
+.cont1b .but {
     display: none;
     border: 1px solid #fff;
-    color:var(--color-main-light);
+    color: var(--color-main-light);
 }
+
+
+/* section */
+
+section {
+
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background-color: var(--bg-section);
+    display: flex;
+    align-items: center;
+    background-image: url('./img/xl-hero-desktop_2021.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+
+
+.sec1a {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+}
+
+.sec1a p {
+    padding-bottom: 2rem;
+    font-size: 1.1875rem;
+    font-weight: 400;
+
+
+
+}
+
+.sec1a h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+
+
+}
+
+.sec1a .but {
+    color: #fff;
+    background-color: var(--color-green1);
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+
+}
+
+.buttonsec {
+    padding-bottom: 1rem;
+}
+
+.sectionmobile {
+    display: none;
+}
+
+
+
 @media (max-width: 991px) {
     .navflex {
         display: flex;
@@ -162,20 +248,70 @@ Header{
         border-top: 1px solid var(--color-gray1);
         padding-top: 1rem;
     }
-    .cont1b .but{
-      display: block;
-    }
-    .cont1a{
-        margin-left:2rem;
+
+    .cont1a {
+        margin-left: 2rem;
     }
 
 }
+
+@media (max-width: 768px) {
+
+    .cont1b .but,
+    .sectionmobile {
+        display: inline-block;
+    }
+
+    .sectiondesk {
+        display: none;
+    }
+
+    section {
+        padding-top: 5%;
+        padding-bottom: 60%;
+        background-image: url('./img/hero-mobile_2021.jpg');
+    }
+
+    .sec1a {
+        text-align: center;
+
+    }
+
+    .sec2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec1a p {
+        padding-bottom: 0rem;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .sec1a h2 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 400;
+        padding-bottom: 1rem;
+
+
+    }
+
+    #query1 {
+        font-size: 1rem;
+    }
+
+
+}
+
 @media (max-width: 576px) {
-    .cont1a{
-        margin-left:1rem;
+    .cont1a {
+        margin-left: 1rem;
         width: 50%
     }
-    h1{
-        display:inline;
+
+    h1 {
+        display: inline;
     }
 }
