@@ -11,6 +11,22 @@ h1 {
     letter-spacing: var(--letter-spacing);
     margin: 0;
 }
+.conttitleh2{
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+.conttitlep{
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    
+    text-align: center;
+}
+.conttitleh3{
+    font-size:1.5rem ;
+    font-weight: 600;
+    text-align: center;
+}
 
 a {
     color: var(--color-main);
@@ -29,6 +45,7 @@ body {
     --color-main-light: #fff;
     --color-dark1: #1e3932;
     --color-green1: #00754a;
+    --color-green2: #158159;
     --color-gray1: #e5e5e5;
     --color-gray2: #4c4c4c;
     --bg-section: #d4e9e2;
@@ -210,8 +227,31 @@ section {
     display: none;
 }
 
+.buttonsec a:hover {
+    background-color: var( --color-green2) !important; 
+    
+}
+
+/* second pannel  */
+.sec3{
+    padding: 8rem 1rem;
+}
+.sec3a{
+    padding-bottom: 3rem;
+}
 
 
+.sec3bimg{
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.conttitlep a{
+    color: var(--color-green1)
+}
+.displaysec3b2{
+    display: none;
+}
 @media (max-width: 991px) {
     .navflex {
         display: flex;
@@ -255,7 +295,7 @@ section {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .cont1b .but,
     .sectionmobile {
@@ -276,12 +316,10 @@ section {
         text-align: center;
 
     }
-
-    .sec2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .sec3{
+        padding: 4rem 1rem;
     }
+ 
 
     .sec1a p {
         padding-bottom: 0rem;
@@ -301,8 +339,35 @@ section {
     #query1 {
         font-size: 1rem;
     }
+   
+    .displaysec3b1{
+        display: none;
+    }
+    .sec3b, .displaysec3b2 {
 
+        display: flex;
+        flex-direction:row;
+        
+    
+    }
+  
+    .sec3b h3,
+    .sec3b p {
+        text-align: start;
+        padding-left: 1rem;
+    }
+    .conttitleh2{
+        font-size: 1.50rem;
 
+    }
+    .conttitleh3{
+        font-size:1.25rem ;
+    }
+    .conttitlep{
+        font-size: 1.1rem;
+    }
+ 
+  
 }
 
 @media (max-width: 576px) {
