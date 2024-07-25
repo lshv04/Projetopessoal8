@@ -36,8 +36,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    
-
 }
 
 :root {
@@ -50,6 +48,7 @@ body {
     --color-gray2: #4c4c4c;
     --bg-section: #d4e9e2;
     --bg-section1:  #f1f8f5;
+    --bg-section2: #f2f0eb;
     --color-star:#cba258;
     --font1: 1rem;
     --letter-spacing: 0.3rem;
@@ -279,16 +278,10 @@ section {
         
 }
 
-.bi-star-fill{
+.nav-link .bi-star-fill{
     font-size:0.875rem ;
     color:var(--color-star);
 }
-
-/* .sec5, .sec5a,.sec5apic,.sec5atext{
-    border:solid 1px black;
-   
-    
-} */
 
 .sec5{
     
@@ -326,8 +319,34 @@ section {
     text-align: start;
 }
 
+/* painel */
+/* .sec7, .sec7a, .sec7b{
+    border: 1px solid black;
+    
+} */
+.sec7{
+    
+    background-color: var(--bg-section2);
+}
 
+.sec7b .bi-star-fill{
+    font-size: 1rem;
+}
+.sec7b {
+padding:0;
+}
+.sec7a{
+    padding:4rem 0;
+}
 
+.row1{
+    
+    padding-bottom: 1.5rem;
+    
+}
+.row2{
+    padding-top: 2.5rem;
+}
 
 @media (max-width: 991px) {
     .navflex {
@@ -369,7 +388,9 @@ section {
     .cont1a {
         margin-left: 2rem;
     }
-
+    .sec7b {
+        padding-bottom: 1rem;;
+        }
 }
 
 @media (max-width: 767px) {
@@ -458,7 +479,7 @@ section {
     .sec5atext, .sec5apic{
         padding:0;
     }
-  
+    
 }
 
 @media (max-width: 576px) {
