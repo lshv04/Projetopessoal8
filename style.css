@@ -66,8 +66,12 @@ body {
 .linkhov {
     text-decoration: underline;
 }
+.linkhovgreen{
+    text-decoration: underline;
+    color:var(--color-green1)
+}
 
-.linkhov:hover {
+.linkhov:hover, .linkhovgreen:hover {
     text-decoration: none;
 }
 
@@ -247,9 +251,7 @@ section {
     padding-bottom: 1.5rem;
 }
 
-.conttitlep a{
-    color: var(--color-green1)
-}
+
 .displaysec3b2{
     display: none;
 }
@@ -374,9 +376,6 @@ padding:0;
     align-items: center;
 }
 
-.sec8b2 a, .sec9a a{
-    color: var(--color-green1);
-}
 .sec8b2 i{
    font-size: 0.875rem;
    margin-left: 0.5rem;
