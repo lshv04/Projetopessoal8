@@ -320,10 +320,9 @@ section {
 }
 
 /* painel */
-/* .sec7, .sec7a, .sec7b{
-    border: 1px solid black;
-    
-} */
+
+
+
 .sec7{
     
     background-color: var(--bg-section2);
@@ -346,6 +345,54 @@ padding:0;
 }
 .row2{
     padding-top: 2.5rem;
+}
+
+
+
+/* painel rewards */
+
+.sec8b2 img{
+    height: 85px;
+    width: 190px;
+}
+
+.sec8a{
+    background-color: var(--bg-section);
+}
+
+.sec8{
+    padding:2rem 0;
+    background-image: url('./img/bg-rewards.png');
+   
+}
+
+.sec8b2{
+   
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.sec8b2 a{
+    color: var(--color-green1);
+}
+.sec8b2 i{
+   font-size: 0.875rem;
+   margin-left: 0.5rem;
+   margin-right: 0.5rem;
+}
+
+.sec8b1 .but {
+    color: #fff;
+    background-color: var(--color-green1);
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.sec8b1{
+    padding:2.5rem 0;
 }
 
 @media (max-width: 991px) {
@@ -479,7 +526,29 @@ padding:0;
     .sec5atext, .sec5apic{
         padding:0;
     }
-    
+    .sec8{
+        padding: 0;
+    }
+    .sec8b1 .but {
+        font-size: 0.875rem;
+    }
+    .sec8b2{
+   
+
+        flex-direction: row;
+      
+    }
+    .sec8b2 img{
+        height: 50px;
+        width: 112px;
+    }
+    .sec8b2a p{
+        padding-left: 1rem;
+        text-align: left;
+    }
+    .sec8b1{
+        padding:1rem ;
+    }
 }
 
 @media (max-width: 576px) {
