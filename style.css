@@ -374,7 +374,7 @@ padding:0;
     align-items: center;
 }
 
-.sec8b2 a{
+.sec8b2 a, .sec9a a{
     color: var(--color-green1);
 }
 .sec8b2 i{
@@ -394,6 +394,15 @@ padding:0;
 .sec8b1{
     padding:2.5rem 0;
 }
+/* painel questions */
+
+
+
+.sec9a{
+    margin-left: 18rem;
+    padding:6rem 0;
+}
+
 
 @media (max-width: 991px) {
     .navflex {
@@ -551,6 +560,12 @@ padding:0;
     }
 }
 
+@media (max-width: 769px){
+    .sec9a{
+        margin-left: 0;
+        padding:3rem 0;
+    }
+}
 @media (max-width: 576px) {
     .cont1a {
         margin-left: 1rem;
