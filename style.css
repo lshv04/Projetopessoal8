@@ -172,6 +172,7 @@ Header {
     top: 0;
     padding: var(--font1);
     background-color: var(--color-dark1);
+    z-index:1000;
 
 }
 
@@ -493,7 +494,62 @@ section {
     color: var(--color-main);
     cursor: pointer;
 
+} 
+
+  /* accordion */
+/* .sec12, .sec12a{
+    border: 1px solid black;
+   
+} */
+
+.sec12{
+    border-top: 3px solid var(--color-gray1);
+    display: none;
+    
 }
+.sec12a{
+    border-bottom: 2px solid var(--color-gray1);
+    padding-bottom: 2rem;
+}
+.accordion-item {
+    border: none;
+}
+
+.accordion-button {
+ 
+    color: var(--color-main);
+    font-size: 1.50rem;
+    font-weight: 400;
+    background-color: #fff !important;
+    --bs-accordion-border-color: #fbfcff;
+    --bs-accordion-btn-focus-box-shadow: #fbfcff;
+}
+
+
+
+.accordion-body {
+    
+    color: var(--color-gray4);
+    font-size: 1.25rem;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.accordion-item {
+    border: none !important;
+}
+
+
+.sec12a ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sec12a li {
+    margin: 0.5rem 0;
+    padding-bottom: 0.5rem;
+}
+
 
 @media (max-width: 991px) {
     .navflex {
@@ -543,6 +599,28 @@ section {
 
     .sec11 {
         display: none;
+    }
+    .sec12{
+       
+        display: block;
+        
+    }
+    .sec12a{
+        padding:1rem 0;
+        
+        
+    }
+    .accordion-button {
+ 
+        color: var(--color-main);
+        font-size: 1.25rem;
+        font-weight: 300;
+        padding-left: 0;
+ 
+    }
+    .accordion-body {
+        font-size: 1rem;
+        padding-left: 0;
     }
 }
 
@@ -675,6 +753,9 @@ section {
     }
 
     .pfooter1 {
+        font-size: 0.9rem;
+    }
+    .footer2p {
         font-size: 0.9rem;
     }
 }
