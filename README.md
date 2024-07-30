@@ -1,13 +1,14 @@
 
 
 
+![Blue Futuristic Technology Presentation (21)](https://github.com/user-attachments/assets/d7b5517f-6968-4450-b5cf-001459630fd1)
 
 
 # Projeto Pessoal #8
 
 Este projeto é um site de portfólio pessoal desenvolvido com o objetivo de clonar a página de recompensas da "Starbucks", proposto no site [Frontend Practice](https://www.frontendpractice.com/projects/starbucks)  a fim de praticar diferentes técnicas de desenvolvimento web.  
 
-Neste projeto, foquei na eficiência e reutilização do código. Criei classes reutilizáveis para itens semelhantes e utilizei diversas variáveis de cores para padronizar e facilitar a manutenção da página.   
+Neste projeto, foquei na eficiência e reutilização do código. Criei classes reutilizáveis para itens semelhantes e utilizei diversas variáveis de cores para padronizar e facilitar a manutenção da página. Também exercitei a modificação do painel completamente com media query.    
 
 ## ✔️ Técnicas e tecnologias utilizadas  
 **HTML5**: Para a marcação semântica do conteúdo.  
@@ -20,6 +21,13 @@ Neste projeto, foquei na eficiência e reutilização do código. Criei classes 
 
 
   
+
+
+![image](https://github.com/user-attachments/assets/aa3d9258-b98f-4862-b977-907e13f7552e)  
+![image](https://github.com/user-attachments/assets/82eb1e40-527b-468b-ac82-22bb817fa190)  
+![image](https://github.com/user-attachments/assets/4e0e6b8e-eecf-4f68-9fc4-fdb85aa3924a)  
+![image](https://github.com/user-attachments/assets/dead92f5-da96-4c9a-935f-c020ae82d775)  
+
 
 
 
